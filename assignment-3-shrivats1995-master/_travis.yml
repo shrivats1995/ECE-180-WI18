@@ -1,0 +1,21 @@
+sudo: false
+language: cpp
+compiler:
+  - gcc
+os:
+  - linux
+
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+    - g++-4.8
+
+before_install:
+  - git clone git@github.com:UCSD-SoftwareFoundations/ECE180-assignment3-tests.git
+install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+script:
+  - ./ECE180-assignment3-tests/test.sh
