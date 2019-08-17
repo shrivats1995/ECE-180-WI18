@@ -1,0 +1,10 @@
+running tests...
+entering dot product
+num1.27886e+08
+den1.47125e+08
+entering dot product
+num3.33849e+06
+den4.60277e+06
+Distance Lewis-Twain: 0.517145
+Distance Lewis-Alice: 0.759295
+Document Lewis is most similar to document Twain
